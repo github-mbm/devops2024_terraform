@@ -1,0 +1,8 @@
+vpc1_cidr           = "172.16.0.0/16"
+vpc1_name           = "Sky"
+vpc1_owner          = "mbm"
+vpc2_cidr           = "172.17.0.0/16"
+vpc2_name           = "Terra"
+vpc2_owner          = "dev"
+sky_subnet_1_cidr   = "172.16.10.0/24"
+terra_subnet_1_cidr = "172.17.10.0/24"
