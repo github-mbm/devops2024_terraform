@@ -12,7 +12,7 @@ resource "aws_route_table" "vpc1_rt" {
   vpc_id = aws_vpc.vpc1.id
 
   route {
-    cidr_block = "0.0.0.0/24"
+    cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.vpc1_igw.id
   }
   tags = {
@@ -34,7 +34,7 @@ resource "aws_route_table" "vpc2_rt" {
   provider = aws.seoul
   vpc_id   = aws_vpc.vpc2.id
   route {
-    cidr_block = "0.0.0.0/24"
+    cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.vpc2_igw.id
   }
   tags = {
