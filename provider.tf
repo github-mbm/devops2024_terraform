@@ -8,11 +8,11 @@ terraform {
   }
   # This backend configuration instructs Terraform to store its state in an S3 bucket.
   backend "s3" {
-    bucket         = "conmod"               # Name of the S3 bucket where the state will be stored.
-    key            = "jun_2024.tfstate"     # Path within the bucket where the state will be read/written.
-    region         = "ap-south-1"           # AWS region of the S3 bucket.
-    dynamodb_table = "test_terraform-locks" # DynamoDB table used for state locking.
-    encrypt        = true                   # Ensures the state is encrypted at rest in S3.
+    bucket         = "conmod"                # Name of the S3 bucket where the state will be stored.
+    key            = "jun_2024.tfstate"      # Path within the bucket where the state will be read/written.
+    region         = "ap-south-1"            # AWS region of the S3 bucket.
+    dynamodb_table = "test1_terraform-locks" # DynamoDB table used for state locking.
+    encrypt        = true                    # Ensures the state is encrypted at rest in S3.
   }
 }
 
